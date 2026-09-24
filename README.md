@@ -1,24 +1,38 @@
-# AI QA Agent
 
-An AI-powered QA Agent built in Python that reads requirements from a database and automatically generates positive and negative test cases for different field types (text, email, password).
+## 🚀 How to Run
 
-## 🎯 What This Project Does
+1. Set up the database:
+```bash
+python setup_db.py
+```
 
-This agent demonstrates a complete AI Agent architecture:
-- Fetches field requirements from a SQLite database
-- Automatically selects the right tool based on field type
-- Generates structured positive and negative test cases
-- Produces a full test case report end-to-end
+2. (Optional) Add extra field requirements:
+```bash
+python add_requirements.py
+```
 
-## 🏗️ Project Structure
+3. Run the full agent and generate the Excel report:
+```bash
+python lesson11.py
+```
 
-| File | Description |
-|------|-------------|
-| `lesson1.py` – `lesson4.py` | Python basics, API concepts, OpenAI setup |
-| `lesson5.py` – `lesson7.py` | Agent role, tools, and first Agent class |
-| `lesson8.py` | Test case generation for multiple field types |
-| `setup_db.py` | Creates and seeds the SQLite database |
-| `lesson9.py` | SQL tool to fetch requirements from the database |
-| `lesson10.py` | Full pipeline — Database + Tools + Agent combined |
+This creates `Test_Case_Report.xlsx` with all generated test cases.
 
-## ⚙️ How It Works
+## 📚 Concepts Covered
+
+- AI Agent architecture (Role, Tools, Input, Output)
+- Tool registry and dynamic tool selection
+- SQL integration with Python (`sqlite3`)
+- Excel report generation (`openpyxl`)
+- Rule-based logic as a foundation for future AI-model integration
+- Git & GitHub version control
+
+## 🔮 Next Steps
+
+- Integrate a real AI model (OpenAI API) to replace rule-based logic
+- Add more field types (checkbox, radio button, file upload)
+- Add a simple UI to trigger report generation
+
+## 👤 Author
+
+Built by [Sanjay Wagh](https://github.com/sanjaywagh90) while learning AI Agent development from scratch, step by step.
